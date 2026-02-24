@@ -10,7 +10,7 @@ function TodoForm({ onAdd }) {
       onAdd(text);
       setText("");
     }
-};
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -20,7 +20,9 @@ function TodoForm({ onAdd }) {
         onChange={(e) => setText(e.target.value)}
         placeholder=" Add New ToDo"
       />
-      <button type="submit">Add</button>
+      <button className="add-btn" type="submit">
+        Add
+      </button>
     </form>
   );
 }
